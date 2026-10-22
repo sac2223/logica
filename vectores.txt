@@ -1,0 +1,84 @@
+un algoritmo que llene un vector de N numeros. 
+luego cuenete cuantos son positivos y cuantos son positivos
+
+inicio
+    int nros[9]
+    int contPos = 0
+    int contNeg = 0
+    float nros
+
+    para (i = 0; i<10; i++) entonces
+        lea "igrese numero"; nro
+        nros[i] = nro
+    finpara
+
+
+    recorrer el vector para contar los + -
+    para (i = 0 ; i<10; i++) entonces
+        si (nros[i] > 0) entonces
+            contPos++
+        sino
+            contNeg++
+    finpara
+    imprimir "cantidad positivos", contPos
+    imprimir "cantidad negativos", contNeg
+fin
+
+
+crear un algoritmo que lea el nombre de un estudiante 
+y su nota final, y los almacene en vectores 
+
+imprimir informe
+total de estudiantes
+total de los que ganaron
+total de los que perdieron 
+promedio del grupo 
+TENEMOS N estudiantes
+
+inicio
+   
+	definir n,i, ganaron,perdieron como entero
+	definir sumaNotas,promedio como real
+	definir nombres como caracter
+	definir notas como real 
+	
+	escribir "ingrese la cantidad de estuiantes:"
+	leer n
+	
+	dimension nombres[n]
+	dimension notas[n]
+	
+	gaanaron <- 0
+	perdieron <- 0 
+	sumaNotas <-0
+	
+	para i <- 1 hasta n hacer 
+		
+        escribir "ingrese el nombre del estudiante ", i, ": "
+		leer nombres[i]
+		
+        escribir "ingrese la nota final de ", nombres[i], ": "
+        leer notas[i]
+		
+        sumaNotas <- sumaNotas + notas[i]
+		
+        si notas[i] >= 3 entonces
+			ganaron <- ganaron + 1
+        sino 
+			perdieron <- perdieron + 1
+        finsi
+    finpara
+	
+    promedio <- sumaNotas/ n
+	
+    escribir "------INFORME---------"
+    escribir "total de estdiantes: " , N 
+    escribir "total que ganaron: " , ganaron
+    escribir "total que perdieron: " , perdieron
+	escribir "promedio del grupo: " , promedio
+fin
+
+
+
+
+
